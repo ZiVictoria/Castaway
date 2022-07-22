@@ -175,20 +175,68 @@ h1, h2, h3{
 .jacob{
 	display: flex;
 	column-gap: 5%;
+	margin-bottom: 200px;
 	&__intro{
 		display: flex;
+		flex-basis: 60%;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: center;
+		&-header{
+			font-family: 'DM Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 65px;
+			line-height: 79px;
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
 		&-paragraph{
+			font-family: 'DM Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 27px;
 			color: #118DA8; 
 		}
 		&-text{
-			color: #FFFFFFB2;
+			color: rgba(255, 255, 255, 0.7);
+			font-family: 'DM Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 22px;
+			line-height: 33px;
 		}
 	}
 	&__image{
-		flex-basis: 45%;
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		img{
+			width: 90%;
+			max-width: 100%;
+		}
+	}
+	@media (max-width:360px) {
+		.jacob{
+			display: flex;
+			&__intro{
+				align-items: center;
+				&-header{
+					font-size: 24px;
+				}
+				&-text{
+					font-size: 15px;
+					line-height: 1.5;
+				}
+				&-paragraph{
+					display: none;
+				}
+			}
+		}
+		img{
+			display: none;
+		}
 	}
 }
 .subscribe{
@@ -196,21 +244,34 @@ h1, h2, h3{
 	background-color: #000000;
 	display: flex;
 	border-radius: 32px;
+	margin-bottom: 200px;
 	&__header{
 		flex-basis: 55%;
 		padding-left: 60px;
 		&-title{
-			font-size: 70px;
+			font-family: 'DM Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 72px;
+			line-height: 79px;
+			letter-spacing: 2.88px;
+			margin-top: 0;
 		}
 		&-paragraph{
+			margin-top: 59px;
 			color: #118DA8;
+			font-family: 'DM Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 27px;
 		}
 	}
 	&__form{
 		flex-grow: 1;
 		display: flex;
 		flex-direction: column;
-		gap: 5px;
+		gap: 20px;
 		justify-content: center;
 		align-items: flex-start;
 		&-input{
@@ -231,6 +292,9 @@ h1, h2, h3{
 			font-size: 15px;
 			width: 87px;
 			color: rgba(255, 255, 255, 0.7);
+			:hover{
+				cursor: pointer;
+			}
 		}
 	}
 
