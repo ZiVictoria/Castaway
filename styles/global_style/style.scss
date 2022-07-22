@@ -12,12 +12,35 @@
 	font-weight: 700;
 	font-style: normal;
 }
-
+*{
+	box-sizing: border-box;
+}
 body{
     background-color:#363F46;
+	color: rgba(255, 255, 255, 0.7);
+}
+h1, h2, h3{
+	color: #fff;
 }
 .container{
-    background-color:white;
     width:90%;
     margin: 0 auto;
 }
+//styles for header start
+
+//header end
+
+
+//styles for section 'episodes' start
+
+//section 'episodes' end
+
+
+//styles for section 'jacob' and 'subscribe' start
+
+//section 'jacob' and 'subscribe' end
+
+
+//styles for footer and section 'reviews' start
+
+//footer and section 'reviews' end
