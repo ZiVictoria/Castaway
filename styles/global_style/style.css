@@ -1,15 +1,15 @@
 @charset "UTF-8";
 @font-face {
   font-family: "DM Sans";
-  src: url("./../fonts/DMSans-Regular.eot");
-  src: local("☺"), url("./../fonts/DMSans-Regular.woff") format("woff"), url("./../fonts/DMSans-Regular.ttf") format("truetype"), url("./../fonts/DMSans-Regular.svg") format("svg");
+  src: url("./../../fonts/DMSans-Regular.eot");
+  src: local("☺"), url("./../../fonts/DMSans-Regular.woff") format("woff"), url("./../../fonts/DMSans-Regular.ttf") format("truetype"), url("./../../fonts/DMSans-Regular.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("./../fonts/DMSans-Bold.eot");
-  src: local("☺"), url("./../fonts/DMSans-Bold.woff") format("woff"), url("./../fonts/DMSans-Bold.ttf") format("truetype"), url("./../fonts/DMSans-Bold.svg") format("svg");
+  src: url("./../../fonts/DMSans-Bold.eot");
+  src: local("☺"), url("./../../fonts/DMSans-Bold.woff") format("woff"), url("./../../fonts/DMSans-Bold.ttf") format("truetype"), url("./../../fonts/DMSans-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -19,7 +19,7 @@
 
 body {
   background-color: #363F46;
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans";
   color: rgba(255, 255, 255, 0.7);
 }
 
