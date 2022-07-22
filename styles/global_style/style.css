@@ -3,7 +3,7 @@
   font-family: "DM Sans";
   src: url("./../fonts/DMSans-Regular.eot");
   src: local("☺"), url("./../fonts/DMSans-Regular.woff") format("woff"), url("./../fonts/DMSans-Regular.ttf") format("truetype"), url("./../fonts/DMSans-Regular.svg") format("svg");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -19,14 +19,103 @@
 
 body {
   background-color: #363F46;
+  font-family: "DM Sans", sans-serif;
   color: rgba(255, 255, 255, 0.7);
 }
 
 h1, h2, h3 {
+  font-weight: 400;
   color: #fff;
 }
 
 .container {
   width: 90%;
   margin: 0 auto;
+}
+
+.reviews {
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+}
+.reviews__item {
+  padding: 64px 60px 51px 50px;
+  border-radius: 32px;
+  background-color: #000;
+}
+.reviews__star {
+  width: 100px;
+  height: 18px;
+  background-image: url(./../../assets/img/star.svg);
+  background-repeat: space;
+}
+.reviews__title {
+  font-size: 36px;
+  line-height: 43px;
+  margin: 21px 0 19px;
+}
+
+.footer {
+  margin-bottom: 117px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(179px, 1fr));
+}
+.footer__item {
+  margin-right: 16px;
+}
+.footer__item:first-child {
+  margin-bottom: 30px;
+}
+.footer__item:nth-child(2) {
+  justify-self: flex-end;
+}
+.footer__item:last-child {
+  margin-right: 0;
+}
+.footer__nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__nav li {
+  margin-bottom: 25px;
+}
+.footer__link {
+  font-size: 17px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.footer__icon {
+  margin-right: 10px;
+}
+.footer__apps {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__app {
+  margin-right: 17px;
+}
+
+@media (max-width: 796px) {
+  .footer__item:nth-child(2) {
+    justify-self: flex-start;
+  }
+}
+@media (max-width: 398px) {
+  .reviews {
+    margin-bottom: 80px;
+  }
+  .footer {
+    padding-left: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
