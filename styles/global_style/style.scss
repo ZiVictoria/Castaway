@@ -175,7 +175,7 @@ h1, h2, h3{
 .jacob{
 	display: flex;
 	column-gap: 5%;
-	margin-bottom: 200px;
+	margin-bottom: 15%;
 	&__intro{
 		display: flex;
 		flex-basis: 60%;
@@ -223,7 +223,7 @@ h1, h2, h3{
 			&__intro{
 				align-items: center;
 				&-header{
-					font-size: 24px;
+					font-size: 26px;
 				}
 				&-text{
 					font-size: 15px;
@@ -244,10 +244,11 @@ h1, h2, h3{
 	background-color: #000000;
 	display: flex;
 	border-radius: 32px;
-	margin-bottom: 200px;
+	margin-bottom: 15%;
+	gap: 20px;
 	&__header{
 		flex-basis: 55%;
-		padding-left: 60px;
+		padding-left: 5%;
 		&-title{
 			font-family: 'DM Sans';
 			font-style: normal;
@@ -297,7 +298,44 @@ h1, h2, h3{
 			}
 		}
 	}
-
+	@media (max-width:360px) {
+		.subscribe{
+			display: flex;
+			flex-direction: row;
+			&__header{
+				display: none;
+				&-title{
+					font-size: 15px;
+					line-height: 1.5;
+				}
+				&-paragraph{
+					display: none;
+				}
+			}
+			&__form{
+				display: flex;
+				gap: 2px;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				&-input{
+					margin-top: 15px;
+					height: 5vh;
+					width: 80vw;
+				}
+				&-input::placeholder{
+					font-size: 15px;
+				}
+				&-button{
+					display: flex;
+					justify-content: center;
+					margin: 15px;
+					width: 80px;
+					height: 40px;
+				}
+			}
+		}
+	}
 }
 
 

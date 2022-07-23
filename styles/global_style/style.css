@@ -164,7 +164,7 @@ h1, h2, h3 {
   display: flex;
   -moz-column-gap: 5%;
        column-gap: 5%;
-  margin-bottom: 200px;
+  margin-bottom: 15%;
 }
 .jacob__intro {
   display: flex;
@@ -215,7 +215,7 @@ h1, h2, h3 {
     align-items: center;
   }
   .jacob .jacob__intro-header {
-    font-size: 24px;
+    font-size: 26px;
   }
   .jacob .jacob__intro-text {
     font-size: 15px;
@@ -234,11 +234,12 @@ h1, h2, h3 {
   background-color: #000000;
   display: flex;
   border-radius: 32px;
-  margin-bottom: 200px;
+  margin-bottom: 15%;
+  gap: 20px;
 }
 .subscribe__header {
   flex-basis: 55%;
-  padding-left: 60px;
+  padding-left: 5%;
 }
 .subscribe__header-title {
   font-family: "DM Sans";
@@ -308,6 +309,50 @@ h1, h2, h3 {
 }
 .subscribe__form-button :hover {
   cursor: pointer;
+}
+@media (max-width: 360px) {
+  .subscribe .subscribe {
+    display: flex;
+    flex-direction: row;
+  }
+  .subscribe .subscribe__header {
+    display: none;
+  }
+  .subscribe .subscribe__header-title {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .subscribe .subscribe__header-paragraph {
+    display: none;
+  }
+  .subscribe .subscribe__form {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe .subscribe__form-input {
+    margin-top: 15px;
+    height: 5vh;
+    width: 80vw;
+  }
+  .subscribe .subscribe__form-input::-moz-placeholder {
+    font-size: 15px;
+  }
+  .subscribe .subscribe__form-input:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .subscribe .subscribe__form-input::placeholder {
+    font-size: 15px;
+  }
+  .subscribe .subscribe__form-button {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    width: 80px;
+    height: 40px;
+  }
 }
 
 .reviews {
