@@ -11,11 +11,43 @@
 <body>
     <div class="container">
         <header>
-
+             <nav class="nav">
+                <div class="nav__logo">
+                    <img src="./assets/logo/logo.svg" alt="logo_svg">
+                </div>
+                <div class="nav__menu">
+                    <a class="nav__link" href="#home">Home</a>
+                    <a class="nav__link" href="#episode">Episodes</a>
+                    <a class="nav__link" href="#about">About</a>
+                    <a class="nav__link" href="#contact">Contact</a>
+                </div>
+            </nav>
         </header>
         <main>
-            <section class="home"></section>
-            <section class="episodes">
+            <section class="home" id="home">
+                <div class="home__img">
+                    <img src="./assets/img/jacob_header.png" alt="jacob_pic">
+                </div>
+                <div class="home__content">
+                    <h1 class="home__title">Take your<br>podcast to the<br>
+                        <div class="home__underline-text">
+                            next 
+                            <img class="home__underline-img" src="./assets/img/Vector.png" alt="underline_svg">
+                        </div>
+                        <span class="bold-title">level<span></h1>
+                    <div class="home__socials">
+                        <p>Listen on</p>
+                        <div class="home__socials-img">
+                            <a class="home__link" href="#"><img src="./assets/icons/spotify.svg" alt="spotify_logo"></a>
+                            <a class="home__link" href="#"><img src="./assets/icons/pocket_casts.svg" alt="pocket_casts_logo"></a>
+                            <a class="home__link" href="#"><img src="./assets/icons/soundcloud.svg" alt="soundcloud_logo"></a>
+                            <a class="home__link" href="#"><img src="./assets/icons/apple_podcasts.svg" alt="apple_podcasts_logo"></a>
+                            <a class="home__link" href="#"><img src="./assets/icons/overcast.svg" alt="overcast_logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="episodes" id="episode">
                 <div class="episodes__header">
                     <h2 class="episodes__header-title">Latest episodes</h2>
                     <button class="episodes__header-btn">View all episodes</button>
@@ -29,7 +61,7 @@
                             Gear
                         </button>
                         <div class="episodes__top-2-number">Episode 3</div>
-                        <h3 class="episodes__top-2-title">Should you get <br>outboard audio gear?</h3>
+                        <h3 class="episodes__top-2-title">Should you get outboard audio gear?</h3>
                         <p class="episodes__top-2-text">Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</p>
                         <button class="episodes__top-2-btn episodes__btn">
                             View Episode Details
@@ -129,7 +161,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="footer__item">
                 <div class="footer__logo">
                     <img src="./assets/logo/logo.svg" alt="Logo">
